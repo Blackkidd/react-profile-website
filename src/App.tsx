@@ -1,25 +1,18 @@
-import { useState } from 'react'
 import { Button, Card, Typography, Space } from 'antd'
 import './App.css'
 
-const { Title, Paragraph } = Typography
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="profile-container">
-      <Title>Profile Website</Title>
-      <Card style={{ maxWidth: 680, margin: '0 auto' }}>
-        <Space direction="vertical" size="middle" style={{ display: 'flex' }}>
-          <Paragraph>
-            Welcome to your profile. This is a minimal example using Ant Design.
-          </Paragraph>
-          <Button type="primary" onClick={() => setCount((c) => c + 1)}>
-            Clicked {count} times
-          </Button>
-        </Space>
-      </Card>
+    <div className="p-8 min-h-screen bg-gray-50">
+      {/* <Card
+        title="Test Ant Design Card"
+        className="max-w-md mx-auto shadow-lg"
+      >
+        <p className="text-xl font-bold text-blue-600">Parinya Khemthong</p>
+        <p className="text-gray-700">Web Developer</p>
+        <p className="text-gray-600 italic">Programmer</p>
+      </Card> */}
     </div>
   )
 }
